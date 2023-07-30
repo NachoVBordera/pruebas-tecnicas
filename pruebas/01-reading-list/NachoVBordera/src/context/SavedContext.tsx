@@ -50,7 +50,6 @@ const BookSavedProvider: React.FC<BookProviderProps> = ({ children }) => {
   );
 };
 
-// Hook personalizado para acceder al contexto de libros
 const useBookContext = () => {
   const context = React.useContext(BookSavedContext);
   if (!context) {

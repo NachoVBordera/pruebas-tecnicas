@@ -19,7 +19,6 @@ function SavedBooksList() {
     "#39DBFF",
     "#FFB443",
   ];
-  console.log(localStorage);
 
   return (
     <>
