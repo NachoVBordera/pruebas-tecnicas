@@ -8,19 +8,19 @@ import { useBookContext } from "./context/SavedContext";
 function App() {
   const { books } = useBookContext();
   return (
-    <>
+    <section id="pricipalSection">
       <header>
         <h1>RENT A BOOK</h1>
         <SavedUi number={books.length} />
       </header>
       <main className="mainSection">
-        <section>
+        <aside>
           <SearchSection />
           <SavedBooksList />
-        </section>
+        </aside>
         <BookList></BookList>
       </main>
-    </>
+    </section>
   );
 }
 

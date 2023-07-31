@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { BookContext } from "../../context/BookContext";
 import { Book } from "../../types";
 import { useBookContext } from "../../context/SavedContext";
+import SavedBookTitleUi from "../savedbooks/SavedBookTitle.ui";
 
 function BookList() {
   const { filteredBooks } = useContext(BookContext);
@@ -14,6 +15,7 @@ function BookList() {
   return (
     <>
       <section className="booksListContainer">
+        <SavedBookTitleUi />
         <ul>
           {filteredBooksToShow.map((book: Book) => (
             <li key={book.book.ISBN}>

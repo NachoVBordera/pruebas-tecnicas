@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap");
+
 @font-face {
   font-family: "Basteleur";
   src: url("../public/fonts/Basteleur/Basteleur-Moonlight.ttf")
@@ -18,16 +20,26 @@
   box-sizing: border-box;
 }
 
+#pricipalSection {
+  margin: 1rem auto;
+  max-width: 1800px;
+}
+
 .mainSection {
   display: grid;
   grid-template-columns: auto 80%;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
+  background-color: #d3cfdf;
+
+  border-left: 5px solid black;
+  border-right: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 header {
   display: flex;
-
+  width: 100%;
   text-align: center;
   align-items: center;
   border: 5px solid black;
@@ -44,6 +56,7 @@ header > h1 {
   padding: 0 2rem;
 }
 .savedUi {
+  font-family: "Rowdies", cursive;
   margin: 0 auto;
   width: max-content;
   height: 100%;
@@ -124,13 +137,65 @@ header > h1 {
   margin-left: 3rem;
   transform: rotate(12deg);
 }
-.booksListContainer {
+
+.SavedBookTitleUi {
+  font-family: "Rowdies", cursive;
   margin-top: 2rem;
-  background-color: #e4cdcd;
+  display: flex;
+  justify-content: center;
+}
+
+.SavedBookTitleUi > section:nth-child(1) {
+  box-shadow: 4px 4px 0 0;
+  font-weight: bolder;
   border: 5px solid black;
+  text-align: center;
+  background-color: #00ff75;
+  width: 12rem;
+  font-size: 3rem;
+}
+
+.SavedBookTitleUi > section:nth-child(2) {
+  box-shadow: 4px 4px 0 0;
+  font-weight: bolder;
+  border: 5px solid black;
+  text-align: center;
+  background-color: #dd7dff;
+  width: 9rem;
+  font-size: 3rem;
+  transform: rotate(-12deg);
+}
+
+.SavedBookTitleUi > section:nth-child(3) {
+  box-shadow: 4px 4px 0 0;
+  font-weight: bolder;
+  border: 5px solid black;
+  text-align: center;
+  background-color: #ff5e5e;
+  width: 9rem;
+  font-size: 3rem;
+}
+
+.SavedBookTitleUi > section:nth-child(4) {
+  box-shadow: 4px 4px 0 0;
+  font-weight: bolder;
+  border: 5px solid black;
+  text-align: center;
+  background-color: #fff700;
+  width: 4rem;
+  font-size: 3rem;
+  transform: rotate(12deg);
+}
+
+.booksListContainer {
+  background-color: #e4cdcd;
+  border-left: 5px solid black;
+
   min-height: 87.7vh;
 }
 .booksListContainer > ul {
+  margin-top: 2rem;
+
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, 20rem);
@@ -145,13 +210,14 @@ header > h1 {
 }
 
 .bookUi {
+  font-family: "Source Code Pro", monospace;
   padding: 10px;
   border: 5px solid rgba(0, 0, 0, 0.788);
   cursor: pointer;
   box-shadow: 10px 10px 0 0px;
   background-color: white;
   width: 15rem;
-  height: 350px;
+  height: 390px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,6 +228,7 @@ header > h1 {
   border: 4px solid black;
   width: 50%;
   margin-bottom: 10px;
+  user-select: none;
 }
 
 .bookUi > p {
@@ -169,13 +236,13 @@ header > h1 {
 }
 
 .bookUi > p:nth-child(2) {
-  font-weight: bold;
+  font-weight: bolder;
   width: 100%;
   border-bottom: 2px solid black;
 }
 
 .bookUi > p:nth-child(3) {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-top: 0;
   background-color: rgba(128, 128, 128, 0.603);
   width: 100%;
@@ -183,9 +250,16 @@ header > h1 {
 }
 
 /* /////SEACH/////// */
+.mainSection > aside {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 330px;
+}
 
 .searchSection {
-  margin-top: 2rem;
+  background-color: #ffffff;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -255,6 +329,7 @@ header > h1 {
   font-size: 1rem;
   background-color: #d9d9d9;
   box-shadow: 4px 4px 0 0;
+  user-select: none;
 }
 
 .searchSection > ul > li:last-child::after {
@@ -282,8 +357,8 @@ header > h1 {
 }
 
 .SabedBooks {
-  margin-top: 2rem;
-  max-width: 15rem;
+  margin: 2rem auto;
+  min-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,17 +366,19 @@ header > h1 {
 }
 
 .SabedBooks > ul {
-  width: 90%;
+  min-width: 100%;
+
   list-style: none;
   display: flex;
   flex-direction: column;
+
   gap: 15px;
 }
 
 .SabedBooks > ul > li {
+  min-width: 100%;
   border: 4px solid black;
   position: relative;
-  background-color: #fff700;
   padding: 0 1rem;
   box-shadow: 4px 4px 0 0;
 }
@@ -311,7 +388,7 @@ header > h1 {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  width: 90%;
+  width: 100%;
   min-width: 9rem;
   text-overflow: ellipsis;
   white-space: pre;
@@ -359,17 +436,12 @@ header > h1 {
     display: flex;
     flex-direction: column;
   }
-  .searchSection {
+  .mainSection > aside {
+    border: 1px solid black;
     width: 100%;
   }
-  .searchSection > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.9);
-    gap: 0.5rem;
+  .searchSection {
+    width: max-content;
   }
 
   .searchSection > ul > li:last-child {
