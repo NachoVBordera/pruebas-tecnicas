@@ -1,9 +1,10 @@
-#[RENT A BOOK](https://pruebas-tecnicas-sigma.vercel.app/)
+# [RENT A BOOK](https://pruebas-tecnicas-sigma.vercel.app/)
+
 ⬆️ **Visit page**⬆️
 
 Platform for renting books with a smooth and personalized experience. It uses React and Vite for fast and efficient development. Developed with TypeScript and automated tests using Jest.
 
-https://github.com/NachoVBordera/pruebas-tecnicas/tree/main/pruebas/01-reading-list/NachoVBordera/public/img/RentABook
+![PAGE IMAGE ](https://github.com/NachoVBordera/pruebas-tecnicas/blob/main/pruebas/01-reading-list/NachoVBordera/public/img/RentABook.png)
 
 ## Getting Started
 
