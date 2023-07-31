@@ -23,7 +23,7 @@ Platform for renting books with a smooth and personalized experience. It uses Re
    ***
    Run test
    ```bash
-      npm test
+   npm test
    ```
    ***
 
@@ -43,31 +43,31 @@ Platform for renting books with a smooth and personalized experience. It uses Re
 
 The challenge requirements are as follows:
 
-- [x] Displaying Available Books
+- ✅ Displaying Available Books
 
-- [x] Creating a Reading List
+- ✅ Creating a Reading List
 
-- [x] Filtering Books by Genre
+- ✅ Filtering Books by Genre
 
-- [x] State Synchronization
+- ✅ State Synchronization
 
-- [x] Data Persistence
+- ✅ Data Persistence
 
-- [ ] Cross-Tab Synchronization
+- ⬜ Cross-Tab Synchronization
 
-- [x] Deployment
+- ✅ Deployment
 
-- [x] Testing
+- ✅ Testing
 
 ## Additional Challenges (optional):
 
-- [x] Implement search functionality in the list of available books.
+- ✅ Implement search functionality in the list of available books.
 
-- [x] Add a new filter to sort books by the number of pages.
+- ✅ Add a new filter to sort books by the number of pages.
 
-- [x] Allow reordering of books in the reading list by priority.
+- ✅ Allow reordering of books in the reading list by priority.
 
-- [x] Make the design responsive to improve the experience on mobile devices and different screen sizes.
+- ✅ Make the design responsive to improve the experience on mobile devices and different screen sizes.
 
 ## Deployment
 
