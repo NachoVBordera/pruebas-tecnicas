@@ -461,6 +461,11 @@ header > h1 {
 }
 
 @media (max-width: 600px) {
+  header {
+    border: none;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
   .savedUi {
     transform: scale(0.8);
   }
@@ -477,6 +482,7 @@ header > h1 {
   }
   .mainSection {
     border: none;
+    border-bottom: 5px solid black;
   }
   .SabedBooks {
     border: none;
