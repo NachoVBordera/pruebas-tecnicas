@@ -8,7 +8,21 @@ export interface BookData {
 interface BookProviderProps {
   children: ReactNode;
 }
+/* 
+para  cambiar al storage, ejecutamos esto
+para sincronizar en otras pestañas
+window.addEventListerner("storage", (e)=>{
+  if(e.key === "counter"){
+    const mewcounterValue = event.newvalue
+    $counter.textContent = newCounterValue
+  }
 
+  $buton.addEventlistener("click", ()=> {
+    localstorage.textContent = counter
+    localstorafe.setItem("counter", counter)
+  })
+
+}*/
 interface BookContextData {
   books: BookData[];
   addBook: (book: BookData) => void;

@@ -459,3 +459,26 @@ header > h1 {
     max-width: none;
   }
 }
+
+@media (max-width: 600px) {
+  .savedUi {
+    transform: scale(0.8);
+  }
+  .mainSection > aside {
+    border: none;
+  }
+
+  .SavedBookTitleUi {
+    transform: scale(0.8);
+  }
+  .booksListContainer {
+    border: none;
+    border-top: 8px solid black;
+  }
+  .mainSection {
+    border: none;
+  }
+  .SabedBooks {
+    border: none;
+  }
+}
