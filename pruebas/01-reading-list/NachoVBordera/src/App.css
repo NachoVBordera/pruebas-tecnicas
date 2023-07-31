@@ -226,6 +226,7 @@ header > h1 {
 
 .bookUi > img {
   border: 4px solid black;
+  box-shadow: 5px 5px 0 0px rgba(0, 0, 0, 0.58);
   width: 50%;
   margin-bottom: 10px;
   user-select: none;
