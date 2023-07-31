@@ -20,6 +20,12 @@ Platform for renting books with a smooth and personalized experience. It uses Re
    ```bash
    npm run dev
    ```
+   ***
+   Run test
+   ```bash
+      npm test
+   ```
+   ***
 
 ## Stack
 
@@ -31,25 +37,27 @@ Platform for renting books with a smooth and personalized experience. It uses Re
 
 - [Jest](https://www.npmjs.com/package/jest): Framework for unit and integration testing for JavaScript and TypeScript applications.
 
+---
+
 ## Challenge Requirements
 
 The challenge requirements are as follows:
 
-- [x] **Displaying Available Books:** The application should display a list of available books that users can review.
+- [x] Displaying Available Books
 
-- [x] **Creating a Reading List:** Users should be able to create a reading list from the available books. The UI should clearly indicate which books are in the reading list and which are not. It should also be possible to move a book from the reading list back to the available list.
+- [x] Creating a Reading List
 
-- [x] **Filtering Books by Genre:** Users should be able to filter the list of available books by genre, and a counter should show the number of available books, the number in the reading list, and the number available in the selected genre.
+- [x] Filtering Books by Genre
 
-- [x] **State Synchronization:** There should be a global state synchronization that reflects the number of books in the reading list and the number still available. If a book is moved from the available list to the reading list, both counts should be updated accordingly.
+- [x] State Synchronization
 
-- [x] **Data Persistence:** The application should persist the reading list data in the browser's local storage. When the page is reloaded, the reading list should be maintained.
+- [x] Data Persistence
 
-- [x] **Cross-Tab Synchronization:** If the user opens the application in two different tabs, the changes made in one tab should be reflected in the other, without the need for a backend.
+- [ ] Cross-Tab Synchronization
 
-- [x] **Deployment:** The application should be deployed on a free hosting service (Netlify, Vercel, Firebase, etc.) and should be accessible through a public URL. Provide the URL in the README.
+- [x] Deployment
 
-- [x] **Testing:** The application must have AT LEAST one test. Write the test that you consider most important for your application.
+- [x] Testing
 
 ## Additional Challenges (optional):
 
